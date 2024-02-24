@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-fontSpaceG;
+  }
+}
+
+@layer components {
+  .join {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .input {
+    border-width: 1px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 0.375rem;
+  }
+
+  .input-date {
+    border-width: 1px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 0.375rem;
+    width: 100%;
+  }
+
+  .label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  .screenreader {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    left: -9999px;
+  }
+
+  .warning {
+    color: theme('colors.colorRed');
+    font-size: 0.7rem;
+  }
+}
