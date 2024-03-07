@@ -19,7 +19,7 @@ const Thanks: FC<ThanksProps> = ({
     setYear('');
   };
   return (
-    <div className='flex flex-col justify-center items-center text-center gap-10 py-20 px-5'>
+    <div className='flex flex-col justify-center items-center text-center gap-10 py-20 px-5 laptop:p-20 laptopm:p-36'>
       <img src={completeImg} alt='complete image' />
       <div className='flex flex-col gap-4'>
         <h1 className='text-3xl font-semibold tracking-wider'>Thank You!</h1>

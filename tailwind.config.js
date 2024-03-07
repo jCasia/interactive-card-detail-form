@@ -21,7 +21,20 @@ export default {
         'bg-main-mobile': "url('src/images/bg-main-mobile.png')",
       },
       screens: {
-        mobilesm: '325px',
+        mobilesm: '350px',
+        tabletsm: '425px',
+        laptop: '1024px',
+        laptopm: '1325px',
+        laptoplg: '1550px',
+        tall: { raw: '(min-height:775px)' },
+        tallest: { raw: '(min-height:1150px)' },
+      },
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
       },
     },
   },
